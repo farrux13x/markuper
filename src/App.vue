@@ -1,26 +1,53 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="header__topa">
+    <div class="container">
+      <ul class="header__top">
+        <li>Каталог</li>
+        <li>О компании</li>
+        <li>Оплата и доставка</li>
+        <li>гарантии и возвратt</li>
+        <li>Сотрудничество</li>
+        <li>Услуги</li>
+        <li>Решения</li>
+        <li>Техподдержка</li>
+        <li>Контакты</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <header-com/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderCom from './components/HeaderCom.vue';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    HeaderCom
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 102px;
+  box-sizing: content-box;
+}
+@media(max-width: 1420px){
+  .container{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 102px;
+    box-sizing: content-box;
+  }
+  .header__bottom{
+    display: none;
+  }
 }
 </style>

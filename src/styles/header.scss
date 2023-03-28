@@ -1,0 +1,185 @@
+.header__topa{
+    // align-items: center;
+    // justify-content: center;
+    background-color: black;
+    color: white;
+    // display: flex;
+    // gap: 20px;
+    // list-style-type: none;
+}
+.header__top{
+    padding: 10px 0;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    li{
+        white-space: nowrap;
+        // padding: 0 32px;
+        // gap: 40px;
+        // border-right: 1px dotted white;
+    }
+    // li:last-child{
+    //     // padding: 0 20px;
+    //     padding-right: 0;
+    //     // border-right: 0px solid white;
+    // }
+    // li:first-child{
+    //     padding-left: 0;
+    // }
+}
+.row{
+    width: 100%;
+    padding: -10px;
+}
+.col-6{
+    margin: 10px;
+    width: 25%;
+}
+.header{
+    &__middle{
+        display: flex;
+        // align-items: ;
+        justify-content: space-between;
+        .rigth{
+            display: flex;
+            gap: 10px;
+        }
+        .left a{
+            text-decoration-style: dotted;      
+        }
+    }
+    &__logo{
+        img{
+            width: 172px;
+            object-fit: contain;
+            height: 94px;
+        }
+    }
+    &__contact{
+        h3{
+            margin: 4px 0;
+        }
+        .tel{
+            display: flex;
+            margin: 4px 0;
+        }
+        img{
+            width: 20px;
+            object-fit: contain;
+            height: 20px;
+        }
+    }
+    &__middlea{
+        display: flex;
+    }
+    &__bottom{
+        width: 100%;
+        display: flex;
+        ul{
+            display: flex;
+            list-style-type: none;
+            background-color: rgb(253,88,25);
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            li{
+                border-right: 1px solid white;
+                color: white;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        button{
+            color: white;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            border-width: 0;
+            padding: 10px;
+            background-color: darken(rgb(253,88,25), 10%);
+        }
+    }
+    &__search{
+        .search__input{
+            padding: 3px;
+            padding-left: 15px;
+            border-radius: 4px;
+            display: flex;
+            background-color: rgb(245, 244, 244);
+            input{
+                border-width: 0;
+                background: rgb(245, 244, 244);
+            }
+            button{
+                margin-left: auto;
+                padding: 5px 10px;
+                border-radius: 3px;
+                border-width: 0;
+                background-color: rgb(253,88,25);
+                color: white;
+            }
+        }
+        img{
+            width: 50px;
+            object-fit: contain;
+            height: 50px;
+        }
+    }
+    &__rub > div{
+        display: flex;
+    }
+    &__rub{
+        margin-bottom: 10px;
+    }
+    &__voip{
+        font-size: 24px;
+        color: rgb(253,88,25);
+    }
+    &__voip + div{
+        font-size: 24px;
+    }
+    &__korzinka{
+        .like{
+            display: flex;
+            img{
+                width: 20px;
+                object-fit: contain;
+                height: 20px;
+            }
+        }
+        .like > div{
+            display: flex;
+            text-decoration: underline;  
+            text-decoration-style: dotted;      
+            .number{
+                // margin-left: 10px;
+                text-decoration: none;
+            }
+        }
+        .korzinka{
+            display: flex;
+            padding: 10px 50px 10px 20px;
+            background-color: rgb(245, 244, 244);
+            // color: rgb(94, 89, 89);
+            border-radius: 10px;
+            &__img{
+                margin-right: 20px;
+                img{
+                    width: 50px;
+                    object-fit: contain;
+                    height: 50px;
+                }
+            }
+            &__text{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
